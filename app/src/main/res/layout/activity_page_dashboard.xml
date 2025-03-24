@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".Dashboard.Dashboard">
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/bountees_logo" />
+
+    <EditText
+        android:id="@+id/et_search"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_alignBottom="@+id/iv_logo"
+        android:layout_marginStart="85dp"
+        android:layout_marginEnd="85dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/shape"
+        android:hint="@string/hint_search"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/iv_cart"
+        android:layout_width="29dp"
+        android:layout_height="29dp"
+        android:layout_alignRight="@id/et_search"
+        android:layout_alignBottom="@+id/iv_logo"
+        android:layout_marginRight="-41dp"
+        android:layout_marginBottom="22dp"
+        android:src="@drawable/shoppingcarticon" />
+
+    <ImageView
+        android:id="@+id/iv_profile"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignRight="@id/iv_cart"
+        android:layout_alignBottom="@+id/iv_logo"
+        android:layout_marginRight="-40dp"
+        android:layout_marginBottom="22dp"
+        android:src="@drawable/profileicon" />
+
+    <ViewFlipper
+        android:id="@+id/view_flipper"
+        android:layout_width="match_parent"
+        android:flipInterval="2500"
+        android:autoStart="true"
+        android:layout_marginTop="100dp"
+        android:inAnimation="@android:anim/fade_in"
+        android:outAnimation="@android:anim/slide_out_right"
+        android:layout_height="200dp" >
+
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imageView1"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:src="@drawable/pic1" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imageView2"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:src="@drawable/pic2" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imageView3"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:src="@drawable/pic3" />-->
+
+    </ViewFlipper>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_dashboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/view_flipper"
+        android:layout_centerVertical="true" />
+
+
+</RelativeLayout>

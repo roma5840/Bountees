@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/et_viewsearch"
+    android:padding="10dp"
+    tools:context=".Dashboard.ViewProduct">
+
+    <ImageView
+        android:id="@+id/iv_viewlogo"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/bountees_logo" />
+
+    <EditText
+        android:id="@+id/et_viewsearch"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_alignBottom="@+id/iv_viewlogo"
+        android:layout_marginStart="85dp"
+        android:layout_marginEnd="85dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/shape"
+        android:hint="@string/hint_search"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/iv_viewsearch"
+        android:layout_width="29dp"
+        android:layout_height="29dp"
+        android:layout_alignRight="@id/et_viewsearch"
+        android:layout_alignBottom="@+id/iv_viewlogo"
+        android:layout_marginRight="-41dp"
+        android:layout_marginBottom="22dp"
+        android:src="@drawable/shoppingcarticon" />
+
+    <ImageView
+        android:id="@+id/iv_viewcart"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignRight="@id/iv_viewsearch"
+        android:layout_alignBottom="@+id/iv_viewlogo"
+        android:layout_marginRight="-40dp"
+        android:layout_marginBottom="22dp"
+        android:src="@drawable/profileicon" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_below="@id/et_viewsearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        style="@style/screen"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/iv_viewproduct"
+                android:layout_width="250dp"
+                android:layout_height="300dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/design1" />
+
+            <TextView
+                android:id="@+id/tv_viewtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                style="@style/text"
+                android:layout_marginTop="10dp"
+                android:text="Test"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_viewprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                style="@style/text"
+                android:text="Test"
+                android:textSize="18dp"
+                android:textStyle="normal" />
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnAddToCart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/bt_customize_shape"
+        style="@style/Buttons"
+        android:text="Add To Cart"
+        android:textAlignment="center"
+        android:textAllCaps="true" />
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "145846548115",
+    "project_id": "com-example-bountees",
+    "storage_bucket": "com-example-bountees.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:145846548115:android:671ecab4e56fd4311f7f66",
+        "android_client_info": {
+          "package_name": "com.example.Bountees"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2r1cM3BuKth-WNyUe7Q8sZ657fK1rHTA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

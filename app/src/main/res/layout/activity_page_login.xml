@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/round_blue_edit_text_1"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="550dp"
+        app:cardElevation="20dp"
+        app:cardCornerRadius="30dp"
+        android:layout_margin="30dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/bountees_logo"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp">
+
+            </ImageView>
+
+            <EditText
+                android:id="@+id/login_username"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/round_back_blue_15"
+                android:hint="Username"
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:textSize="15sp">
+
+            </EditText>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="10dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:passwordToggleEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/login_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Password"
+                        android:background="@drawable/round_back_blue_15"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="20dp"
+                        android:textSize="16sp"
+                        android:inputType="textPassword"
+                        android:maxLines="1"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:text="Forgot Password"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black">
+
+            </TextView>
+            <Button
+                android:id="@+id/bt_confirm_login"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:gravity="center"
+                android:text="Confirm"
+                android:textColor="@color/white"
+                android:background="@drawable/black_confirmation_oval"
+                android:textAllCaps="false"
+                android:layout_marginTop="20dp"
+                android:textSize="20dp">
+
+            </Button>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#1A0000"
+                    android:layout_toStartOf="@id/tv_or_text"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp">
+
+
+                </View>
+
+                <TextView
+                    android:id="@+id/tv_or_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="OR"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"></TextView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#1A0000"
+                    android:layout_toEndOf="@id/tv_or_text"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp">
+
+
+                </View>
+
+
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/create_account"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/round_back_blue_15"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="60dp"
+                android:layout_marginEnd="20dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/createaccount_icon">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Create a New Account"
+                    android:textStyle="bold">
+
+                </TextView>
+
+
+            </RelativeLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+</LinearLayout>
